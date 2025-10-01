@@ -12,7 +12,7 @@ import {
 
 
 export default function FeaturesSection() {
-  const add = 0  ; 
+  
   const features = [
     {
       title: "Secret Queen Mechanic",
