@@ -10,7 +10,7 @@ const Navabar = () => {
             <div className="flex items-center gap-6">
               <a href="#home" className="text-white/90 hover:text-white transition-colors">Home</a>
               <a
-                href="https://github.com/"
+                href="https://github.com/creation22"
                 target="_blank"
                 rel="noreferrer"
                 className="text-white/90 hover:text-white transition-colors"

@@ -2,7 +2,7 @@ import BackgroundCode from './BackgroundCode';
 
 const Background = () => {
   return (
-    <div className="relative w-full h-[600px]" id="home">
+    <div className="relative w-full h-screen" id="home">
       {/* Background animation */}
       <BackgroundCode
         animationType="rotate"

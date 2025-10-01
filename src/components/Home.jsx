@@ -6,8 +6,9 @@ const Home = () => {
     return (
         <div>
             <Navabar/>
-            
-            <Background/>
+            <div className="">
+                <Background/>
+            </div>
         </div>
     )
 }

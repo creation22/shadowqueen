@@ -11,18 +11,18 @@ const Footer = () => {
                     </div>
 
                     <div className="flex items-center gap-4 text-sm">
-                        <a href="mailto:srajangupta2001@gmail.com" className="text-white/80 hover:text-white transition-colors">Email</a>
+                        <a href="mailto:creation2224@gmail.com" className="text-white/80 hover:text-white transition-colors">Email</a>
                         <span className="text-white/20">•</span>
-                        <a href="https://github.com/srajan-gupta" target="_blank" rel="noreferrer" className="text-white/80 hover:text-white transition-colors">GitHub</a>
+                        <a href="https://github.com/creation22" target="_blank" rel="noreferrer" className="text-white/80 hover:text-white transition-colors">GitHub</a>
                         <span className="text-white/20">•</span>
-                        <a href="https://www.linkedin.com/in/srajan-gupta-2001/" target="_blank" rel="noreferrer" className="text-white/80 hover:text-white transition-colors">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/ssrajangupta22/" target="_blank" rel="noreferrer" className="text-white/80 hover:text-white transition-colors">LinkedIn</a>
                         <span className="text-white/20">•</span>
-                        <a href="https://twitter.com/srajan_gupta" target="_blank" rel="noreferrer" className="text-white/80 hover:text-white transition-colors">Twitter</a>
+                        <a href="https://twitter.com/_creation22" target="_blank" rel="noreferrer" className="text-white/80 hover:text-white transition-colors">Twitter</a>
                     </div>
 
                     <div className="flex items-center gap-3">
                         <a
-                            href="https://www.buymeacoffee.com/srajangupta"
+                            href="https://buymeacoffee.com/creation22"
                             target="_blank"
                             rel="noreferrer"
                             className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-white hover:bg-white/20 transition-colors"
