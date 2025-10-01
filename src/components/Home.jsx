@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Navabar from './Navabar'
 import Background from './Background'
 
-const Home = () => {
+const Home = memo(() => {
     return (
         <div>
             <Navabar/>
@@ -11,6 +11,6 @@ const Home = () => {
             </div>
         </div>
     )
-}
+})
 
 export default Home

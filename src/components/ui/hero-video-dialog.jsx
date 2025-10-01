@@ -70,7 +70,7 @@ export function HeroVideoDialog({
           alt={thumbnailAlt}
           width={1920}
           height={1080}
-          className="w-full rounded-md border shadow-lg transition-all duration-200 ease-out group-hover:brightness-[0.8]" />
+          className="w-full h-auto rounded-md border shadow-lg transition-all duration-200 ease-out group-hover:brightness-[0.8] object-cover" />
         <div
           className="absolute inset-0 flex scale-[0.9] items-center justify-center rounded-2xl transition-all duration-200 ease-out group-hover:scale-100">
           <div
@@ -105,7 +105,7 @@ export function HeroVideoDialog({
             <motion.div
               {...selectedAnimation}
               transition={{ type: "spring", damping: 30, stiffness: 300 }}
-              className="relative mx-4 aspect-video w-full max-w-4xl md:mx-0">
+              className="relative mx-2 sm:mx-4 aspect-video w-full max-w-4xl md:mx-0">
               <motion.button
                 className="absolute -top-16 right-0 rounded-full bg-neutral-900/50 p-2 text-xl text-white ring-1 backdrop-blur-md dark:bg-neutral-100/50 dark:text-black">
                 <XIcon className="size-5" />

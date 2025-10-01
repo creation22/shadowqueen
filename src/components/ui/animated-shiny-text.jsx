@@ -1,6 +1,8 @@
+import { memo } from 'react';
+
 const cn = (...classes) => classes.filter(Boolean).join(" ")
 
-export const AnimatedShinyText = ({
+export const AnimatedShinyText = memo(({
   children,
   className,
   shimmerWidth = 100,
@@ -13,8 +15,8 @@ export const AnimatedShinyText = ({
       }}
       className={cn(
         "block w-full text-center text-white",
-        "animate-shiny-text [background-size:var(--shiny-width)_100%] bg-clip-text [background-position:0_0] bg-no-repeat [transition:background-position_1s_cubic-bezier(.6,.6,0,1)_infinite]",
-        "bg-gradient-to-r from-transparent via-white/80 via-50% to-transparent",
+        "animate-shiny-text [background-size:var(--shiny-width)_100%] bg-clip-text [background-position:0_0] bg-no-repeat [transition:background-position_2s_ease-in-out_infinite]",
+        "bg-gradient-to-r from-transparent via-white/60 via-50% to-transparent",
         className
       )}
       {...props}
@@ -22,6 +24,6 @@ export const AnimatedShinyText = ({
       {children}
     </span>
   );
-}
+});
 
 

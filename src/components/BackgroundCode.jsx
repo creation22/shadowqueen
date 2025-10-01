@@ -43,11 +43,12 @@ const BackgroundCode = ({
     const HOVSTR = Math.max(0, hoverStrength || 1);
     const INERT = Math.max(0, Math.min(1, inertia || 0.12));
 
-    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    const dpr = Math.min(1.5, window.devicePixelRatio || 1);
     const renderer = new Renderer({
       dpr,
       alpha: transparent,
-      antialias: false
+      antialias: false,
+      powerPreference: 'low-power'
     });
     const gl = renderer.gl;
     gl.disable(gl.DEPTH_TEST);
@@ -157,7 +158,7 @@ const BackgroundCode = ({
           wob = mat2(c0, c1, c2, c0);
         }
 
-        const int STEPS = 100;
+        const int STEPS = 50;
         for (int i = 0; i < STEPS; i++) {
           p = vec3(f, z);
           p.xz = p.xz * wob;
@@ -329,8 +330,21 @@ const BackgroundCode = ({
       program.uniforms.uUseBaseWobble.value = 1;
     }
 
+    let lastFrameTime = 0;
+    const targetFPS = 30;
+    const frameInterval = 1000 / targetFPS;
+
     const render = t => {
-      const time = (t - t0) * 0.001;
+      const currentTime = t - t0;
+      
+      // Frame rate limiting
+      if (currentTime - lastFrameTime < frameInterval) {
+        raf = requestAnimationFrame(render);
+        return;
+      }
+      lastFrameTime = currentTime;
+      
+      const time = currentTime * 0.001;
       program.uniforms.iTime.value = time;
 
       let continueRAF = true;

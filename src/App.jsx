@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import './App.css'
 import Home from './components/Home'
 import FeaturesSection from './components/FeaturesSection'
@@ -11,7 +9,6 @@ import { Analytics } from "@vercel/analytics/react"
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -32,7 +29,7 @@ function App() {
    }}
  />
 
-   <div className="pt-24 relative z-10">
+   <div className="pt-20 sm:pt-24 relative z-10">
      <Home/>
      <Video/>
      <FeaturesSection/>
