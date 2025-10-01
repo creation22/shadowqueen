@@ -1,5 +1,5 @@
 import { HeroVideoDialog } from "./ui/hero-video-dialog"
-import { AnimatedShinyText } from "./ui/animated-shiny-text"
+import { AnimatedShinyText } from "./ui/animated-shiny-text.jsx"
 
 export default function Video() {
   return (
