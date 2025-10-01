@@ -7,8 +7,7 @@ const Home = () => {
     return (
         <div>
             <Navabar/>
-
-            <AnimatedShinyText text="The Shadow Queen" />
+            
             <Background/>
         </div>
     )

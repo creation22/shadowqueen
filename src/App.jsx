@@ -5,6 +5,7 @@ import Home from './components/Home'
 import FeaturesSection from './components/FeaturesSection'
 import Video from './components/Video'
 import Testimonial from './components/Testimonial'
+import Stats from './components/Stats'
 import Footer from './components/Footer'
 
 
@@ -32,8 +33,9 @@ function App() {
 
    <div className="pt-24 relative z-10">
      <Home/>
-     <FeaturesSection/>
      <Video/>
+     <FeaturesSection/>
+     <Stats/>
      <Testimonial/>
      <Footer/>
    </div>
