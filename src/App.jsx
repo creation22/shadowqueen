@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import './App.css'
 import Home from './components/Home'
-import FeaturesSection from './components/featuresSection'
+import FeaturesSection from './components/FeaturesSection'
 import Video from './components/Video'
 import Testimonial from './components/Testimonial'
 import Stats from './components/Stats'
