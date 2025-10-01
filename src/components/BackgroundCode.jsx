@@ -43,7 +43,7 @@ const BackgroundCode = ({
     const HOVSTR = Math.max(0, hoverStrength || 1);
     const INERT = Math.max(0, Math.min(1, inertia || 0.12));
 
-    const dpr = Math.min(1.5, window.devicePixelRatio || 1);
+    const dpr = 1;
     const renderer = new Renderer({
       dpr,
       alpha: transparent,
@@ -158,7 +158,7 @@ const BackgroundCode = ({
           wob = mat2(c0, c1, c2, c0);
         }
 
-        const int STEPS = 50;
+        const int STEPS = 40;
         for (int i = 0; i < STEPS; i++) {
           p = vec3(f, z);
           p.xz = p.xz * wob;
@@ -331,7 +331,7 @@ const BackgroundCode = ({
     }
 
     let lastFrameTime = 0;
-    const targetFPS = 30;
+    const targetFPS = 15;
     const frameInterval = 1000 / targetFPS;
 
     const render = t => {
