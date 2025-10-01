@@ -7,7 +7,7 @@ import Video from './components/Video'
 import Testimonial from './components/Testimonial'
 import Stats from './components/Stats'
 import Footer from './components/Footer'
-
+import { Analytics } from "@vercel/analytics/react"
 
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
 
   return (
     <>
+  <Analytics/>
     <div className="min-h-screen w-full bg-black relative text-white font-poppins">
  
  <div
